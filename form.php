@@ -26,12 +26,12 @@ if (isset ($_POST['submitbutton'])) {
          // Yes? Strip the added slashes
          $_POST = array_map('stripslashes', $_POST);
       }
-	
-	 update_option( 'plugin_force_apply_text', $_POST['force_apply_text']);
-	 update_option( 'plugin_force_apply_yes_text', $_POST['force_apply_yes_text']);
-	 update_option( 'plugin_force_apply_no_text', $_POST['force_apply_no_text']);
-	 update_option( 'plugin_force_apply_no_url', $_POST['force_apply_no_url']);
-	 update_option( 'plugin_force_apply_postid', intval($_POST['force_apply_post_id']));
+
+    update_option( 'plugin_force_apply_text', $_POST['force_apply_text']);
+    update_option( 'plugin_force_apply_yes_text', $_POST['force_apply_yes_text']);
+    update_option( 'plugin_force_apply_no_text', $_POST['force_apply_no_text']);
+    update_option( 'plugin_force_apply_no_url', $_POST['force_apply_no_url']);
+    update_option( 'plugin_force_apply_postid', intval($_POST['force_apply_post_id']));
 
       echo '<div id="message" class="updated fade">Your settings have been saved</div>';
    }
@@ -58,7 +58,7 @@ $force_apply_postid = get_option( 'plugin_force_apply_postid', 0 );
    <tr class="alternate iedit">
       <td>Apply question:</td>
       <td><input type="input" value="<?php echo $force_apply_text; ?>" name="force_apply_text" size="50"></td>
-   </tr>   
+   </tr>
    <tr class="alternate">
       <td>Apply "YES" text:</td>
       <td><input type="input" value="<?php echo $force_apply_yes_text; ?>" name="force_apply_yes_text"></td>
@@ -70,7 +70,7 @@ $force_apply_postid = get_option( 'plugin_force_apply_postid', 0 );
    <tr class="alternate">
       <td>Apply "NO" url:</td>
       <td><input type="input" value="<?php echo $force_apply_no_url; ?>" name="force_apply_no_url" size="50"></td>
-   </tr>   
+   </tr>
    <tr class="iedit iedit">
       <td>Which page has an explanation text to show the visitor?</td>
       <td><?php wp_dropdown_pages(array('exclude_tree' => 0, 'selected' => $force_apply_postid, 'name' => 'force_apply_post_id', 'show_option_none' => __('None'), 'sort_column'=> 'menu_order, post_title')); ?></td>
@@ -86,6 +86,6 @@ $force_apply_postid = get_option( 'plugin_force_apply_postid', 0 );
 
 <h3>Plugin info</h3>
 <p class="updated">
-* Coding by RamonFincken.com<br/>
-* Idea by MKBconnect.net
+* Coding by <a href="http://www.RamonFincken.com" title="RamonFincken.com">RamonFincken.com</a><br/>
+* Idea by <a href="http://www.MKBconnect.net" title="MKBconnect.net">MKBconnect.net</a>
 </p>
