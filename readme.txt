@@ -11,6 +11,8 @@ Class to show Terms and Conditions to every visitor upon first visit. Visitor ca
 == Description ==
 
 Class to show Terms and Conditions to every visitor upon first visit. Visitor can apply (YES) or leave the website.
+* Coding by <a href="http://www.RamonFincken.com" title="RamonFincken.com">RamonFincken.com</a><br/>
+* Idea by <a href="http://www.MKBconnect.net" title="MKBconnect.net">MKBconnect.net</a>
 
 == Installation ==
 
