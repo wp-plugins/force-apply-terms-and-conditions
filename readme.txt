@@ -33,4 +33,6 @@ First release
 
 == Screenshots ==
 
-None yet
+1. Any page at first visit
+2. Settings
+3. Easy edit the page using WP editor of page
